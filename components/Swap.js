@@ -61,7 +61,7 @@ export const Swap = () => {
             <h1 className="mb-4 text-3xl font-extrabold text-yellow-400 md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-[#e7e8d9] from-yellow-100">dex</span>.</h1>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 bg-custom-linear rounded-lg w-96 shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="flex flex-col justify-between p-4 leading-normal w-full gap-4">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#e7e8d9] dark:text-white">You're selling : {sellingTokenName}</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#e7e8d9] dark:text-white">You&apos;re selling : {sellingTokenName}</h5>
                     <div className="flex flex-row justify-between items-center w-full">
                         <div className="p-2 w-18 h-18 bg-custom-radial grid justify-items-center content-center rounded-lg">
                             <img className="w-12 h-12 rounded-full shadow-lg" src={`${sellingTokenImage}`} alt="SOL" />
@@ -74,7 +74,7 @@ export const Swap = () => {
             </a>
             <a href="#" class="flex flex-col items-center bg-white border border-gray-200 bg-custom-linear rounded-lg w-96 shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="flex flex-col justify-between p-4 leading-normal w-full gap-4">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#e7e8d9] dark:text-white">You're buying : {buyingTokenName}</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-[#e7e8d9] dark:text-white">You&apos;re buying : {buyingTokenName}</h5>
                     <div className="flex flex-row justify-between items-center w-full">
                         <div className="p-2 w-18 h-18 bg-custom-radial grid justify-items-center content-center rounded-lg">
                             <img className="w-12 h-12 rounded-full shadow-lg" src={`${buyingTokenImage}`} alt="SOL" />
