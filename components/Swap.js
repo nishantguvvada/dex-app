@@ -54,11 +54,11 @@ export const Swap = () => {
                 setBuyingTokenPrice(0)
                 return;
             }
-            const response = await axios.get("https://price.jup.ag/v6/price", { params : {
-                ids:"SOL"
+            const response = await axios.get("https://api.jup.ag/price/v2", { params : {
+                ids:"So11111111111111111111111111111111111111112"
             }});
-            console.log("Price", response.data.data.SOL.price * sellingTokenAmount);
-            setBuyingTokenPrice(response.data.data.SOL.price * sellingTokenAmount);
+            console.log("Price", response);
+            setBuyingTokenPrice(response.data.data.So11111111111111111111111111111111111111112.price * sellingTokenAmount);
         } catch(err) {
             console.log("Error", err);
         }
