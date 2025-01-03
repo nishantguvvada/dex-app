@@ -10,5 +10,4 @@ It is a sample application to showcase implementation of decentralized exchange 
 
 # Improvements
 
-- Add escrow feature
 - Swapping multiple token

@@ -15,7 +15,6 @@ import {
     useConnection, 
     useWallet
 } from "@solana/wallet-adapter-react";
-import bs58 from "bs58";
 import { LAMPORTS_PER_SOL, VersionedTransaction } from "@solana/web3.js";
 
 export const Swap = () => {
@@ -122,11 +121,11 @@ export const Swap = () => {
         } catch(err) {
             console.log("Error : ", err);
         }
-    }
+    } 
 
     return (
-        <div className="bg-custom-radial md:mt-[75px] px-8 py-8 flex flex-col justify-center items-center gap-8 h-full">
-            <h1 className="mb-2 text-3xl font-extrabold text-yellow-400 md:text-5xl lg:text-6xl"><span className="text-transparent bg-clip-text bg-gradient-to-r to-[#e7e8d9] from-yellow-100">dex</span>.</h1>
+        <div className="bg-custom-radial md:mt-[75px] px-8 py-8 flex flex-col justify-center items-center gap-8 h-full w-full">
+            <h1 style={{ textShadow: '0 0 1.75rem #FCEAAC' }} className="mb-2 text-3xl text-[#FCEAAC] md:text-5xl lg:text-6xl text-[#FCEAAC] saturate-[175%]"><span className="text-transparent bg-clip-text bg-[#FCEAAC] hover:bg-[#ff4691] hover:cursor-pointer">dex.</span></h1>
             <div className="flex flex-col justify-center items-center md:flex-row gap-4 md-gap-2 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                 <WalletMultiButtonDynamic/>
                 <WalletMultiDiconnectButtonDynamic/>
